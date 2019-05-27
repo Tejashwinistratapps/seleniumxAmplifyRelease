@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+<!--   <test name="Test_Registrationvendor">
+    <classes>
+      <class name="com.xamplify.login.Registrationvendor"/>
+    </classes>
+  </test>  -->
+  
+  <test name="Test_Login">
+    <classes>
+      <class name="com.xamplify.login.Login"/>
+    </classes>    
+   </test> 
+  
+   <test name="Test_ManageTemplates">
+    <classes>
+      <class name="com.xamplify.login.ManageTemplates"/>
+    </classes>    
+   </test> 
+  
+  
+  
+ 
+</suite> <!-- Suite -->
