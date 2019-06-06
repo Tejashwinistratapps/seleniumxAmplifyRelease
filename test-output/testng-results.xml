@@ -1,22 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="4" failed="0" total="6" passed="2">
+=======
+<testng-results skipped="0" failed="0" total="2" passed="2">
+>>>>>>> branch 'master' of https://github.com/Tejashwinistratapps/seleniumxAmplifyRelease.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Suite" duration-ms="63599" started-at="2019-06-06T09:42:40Z" finished-at="2019-06-06T09:43:43Z">
+=======
+  <suite name="Suite" duration-ms="34654" started-at="2019-06-06T10:00:50Z" finished-at="2019-06-06T10:01:25Z">
+>>>>>>> branch 'master' of https://github.com/Tejashwinistratapps/seleniumxAmplifyRelease.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Test_Login" duration-ms="28506" started-at="2019-06-06T09:42:40Z" finished-at="2019-06-06T09:43:08Z">
+=======
+    <test name="Test_Login" duration-ms="34654" started-at="2019-06-06T10:00:50Z" finished-at="2019-06-06T10:01:25Z">
+>>>>>>> branch 'master' of https://github.com/Tejashwinistratapps/seleniumxAmplifyRelease.git
       <class name="com.xamplify.login.Login">
+<<<<<<< HEAD
         <test-method status="PASS" signature="start()[pri:0, instance:com.xamplify.login.Login@1ed4ae0f]" name="start" duration-ms="13027" started-at="2019-06-06T15:12:40Z" finished-at="2019-06-06T15:12:53Z">
+=======
+        <test-method status="PASS" signature="start()[pri:0, instance:com.xamplify.login.Login@1ed4ae0f]" name="start" duration-ms="14047" started-at="2019-06-06T15:30:50Z" finished-at="2019-06-06T15:31:04Z">
+>>>>>>> branch 'master' of https://github.com/Tejashwinistratapps/seleniumxAmplifyRelease.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="login()[pri:0, instance:com.xamplify.login.Login@1ed4ae0f]" name="login" duration-ms="15436" started-at="2019-06-06T15:12:53Z" finished-at="2019-06-06T15:13:08Z">
+=======
+        <test-method status="PASS" signature="login()[pri:0, instance:com.xamplify.login.Login@1ed4ae0f]" name="login" duration-ms="20591" started-at="2019-06-06T15:31:04Z" finished-at="2019-06-06T15:31:25Z">
+>>>>>>> branch 'master' of https://github.com/Tejashwinistratapps/seleniumxAmplifyRelease.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
       </class> <!-- com.xamplify.login.Login -->
     </test> <!-- Test_Login -->
+<<<<<<< HEAD
     <test name="Test_UploadVideo" duration-ms="35055" started-at="2019-06-06T09:43:08Z" finished-at="2019-06-06T09:43:43Z">
       <class name="com.xamplify.login.UploadVideo">
         <test-method status="FAIL" signature="uploadvideo()[pri:0, instance:com.xamplify.login.UploadVideo@53045c6c]" name="uploadvideo" is-config="true" duration-ms="0" started-at="2019-06-06T15:13:08Z" finished-at="2019-06-06T15:13:08Z">
@@ -98,5 +119,7 @@ Caused by: java.io.IOException: CreateProcess error=2, The system cannot find th
         </test-method> <!-- upload4 -->
       </class> <!-- com.xamplify.login.UploadVideo -->
     </test> <!-- Test_UploadVideo -->
+=======
+>>>>>>> branch 'master' of https://github.com/Tejashwinistratapps/seleniumxAmplifyRelease.git
   </suite> <!-- Suite -->
 </testng-results>
