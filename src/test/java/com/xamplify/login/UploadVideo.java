@@ -28,7 +28,7 @@ public class UploadVideo
 
 	static WebDriver driver = Instance.getInstance();
 	//static Properties properties = PropertiesFile.readPropertyFile("C:\\Users\\dtejashwini\\eclipse-workspace\\xamplify-selenium\\datafile.properties");
-	static Properties properties = PropertiesFile.readPropertyFile("datafile.properties");
+	static Properties properties = PropertiesFile.readPropertyFile("file.properties");
 	public  static Logger logger = LoggerFactory.getLogger(UploadVideo.class);
 
 
