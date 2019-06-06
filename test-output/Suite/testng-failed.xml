@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <test name="Test_ManageTemplates(failed)">
+  <test name="Test_UploadVideo(failed)">
     <classes>
-      <class name="com.xamplify.login.ManageTemplates">
+      <class name="com.xamplify.login.UploadVideo">
         <methods>
-          <include name="manage_template"/>
+          <include name="uploadvideo"/>
+          <include name="upload2"/>
+          <include name="upload3"/>
+          <include name="upload1"/>
+          <include name="upload4"/>
         </methods>
-      </class> <!-- com.xamplify.login.ManageTemplates -->
+      </class> <!-- com.xamplify.login.UploadVideo -->
     </classes>
-  </test> <!-- Test_ManageTemplates(failed) -->
+  </test> <!-- Test_UploadVideo(failed) -->
 </suite> <!-- Failed suite [Suite] -->

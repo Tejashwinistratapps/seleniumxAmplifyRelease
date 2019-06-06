@@ -11,12 +11,30 @@
       <class name="com.xamplify.login.Login"/>
     </classes>    
    </test> 
+   <test name="Test_UploadVideo">
+    <classes>
+      <class name="com.xamplify.login.UploadVideo"/>
+    </classes>    
+   </test> 
+   
+   <!-- <test name="Test_Login">
+    <classes>
+      <class name="com.xamplify.login.Login"/>
+    </classes>    
+   </test> 
+  
+   <test name="Test_Emailcampaign">
+    <classes>
+      <class name="com.xamplify.login.Emailcampaign"/>
+    </classes>    
+   </test> 
   
    <test name="Test_ManageTemplates">
     <classes>
       <class name="com.xamplify.login.ManageTemplates"/>
     </classes>    
-   </test> 
+   </test>  -->
+  
   
   
   

@@ -1,29 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="4" failed="0" total="6" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="294261" started-at="2019-05-13T12:38:54Z" finished-at="2019-05-13T12:43:48Z">
+  <suite name="Suite" duration-ms="63599" started-at="2019-06-06T09:42:40Z" finished-at="2019-06-06T09:43:43Z">
     <groups>
     </groups>
-    <test name="Test_Login" duration-ms="29296" started-at="2019-05-13T12:38:54Z" finished-at="2019-05-13T12:39:23Z">
+    <test name="Test_Login" duration-ms="28506" started-at="2019-06-06T09:42:40Z" finished-at="2019-06-06T09:43:08Z">
       <class name="com.xamplify.login.Login">
-        <test-method status="PASS" signature="start()[pri:0, instance:com.xamplify.login.Login@1ed4ae0f]" name="start" duration-ms="8628" started-at="2019-05-13T18:08:54Z" finished-at="2019-05-13T18:09:03Z">
+        <test-method status="PASS" signature="start()[pri:0, instance:com.xamplify.login.Login@1ed4ae0f]" name="start" duration-ms="13027" started-at="2019-06-06T15:12:40Z" finished-at="2019-06-06T15:12:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.xamplify.login.Login@1ed4ae0f]" name="login" duration-ms="20631" started-at="2019-05-13T18:09:03Z" finished-at="2019-05-13T18:09:23Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.xamplify.login.Login@1ed4ae0f]" name="login" duration-ms="15436" started-at="2019-06-06T15:12:53Z" finished-at="2019-06-06T15:13:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
       </class> <!-- com.xamplify.login.Login -->
     </test> <!-- Test_Login -->
-    <test name="Test_ManageTemplates" duration-ms="264910" started-at="2019-05-13T12:39:23Z" finished-at="2019-05-13T12:43:48Z">
-      <class name="com.xamplify.login.ManageTemplates">
-        <test-method status="PASS" signature="manage_template()[pri:0, instance:com.xamplify.login.ManageTemplates@663c9e7a]" name="manage_template" duration-ms="264905" started-at="2019-05-13T18:09:23Z" finished-at="2019-05-13T18:13:48Z">
+    <test name="Test_UploadVideo" duration-ms="35055" started-at="2019-06-06T09:43:08Z" finished-at="2019-06-06T09:43:43Z">
+      <class name="com.xamplify.login.UploadVideo">
+        <test-method status="FAIL" signature="uploadvideo()[pri:0, instance:com.xamplify.login.UploadVideo@53045c6c]" name="uploadvideo" is-config="true" duration-ms="0" started-at="2019-06-06T15:13:08Z" finished-at="2019-06-06T15:13:08Z">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Cannot run program "D:\Selenium\Files\Upload": CreateProcess error=2, The system cannot find the file specified]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Cannot run program "D:\Selenium\Files\Upload": CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at com.xamplify.login.UploadVideo.uploadvideo(UploadVideo.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+	... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- manage_template -->
-      </class> <!-- com.xamplify.login.ManageTemplates -->
-    </test> <!-- Test_ManageTemplates -->
+        </test-method> <!-- uploadvideo -->
+        <test-method status="SKIP" signature="upload1()[pri:0, instance:com.xamplify.login.UploadVideo@53045c6c]" name="upload1" duration-ms="33" started-at="2019-06-06T15:13:43Z" finished-at="2019-06-06T15:13:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- upload1 -->
+        <test-method status="SKIP" signature="uploadvideo()[pri:0, instance:com.xamplify.login.UploadVideo@53045c6c]" name="uploadvideo" is-config="true" duration-ms="0" started-at="2019-06-06T15:13:43Z" finished-at="2019-06-06T15:13:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadvideo -->
+        <test-method status="SKIP" signature="upload2()[pri:0, instance:com.xamplify.login.UploadVideo@53045c6c]" name="upload2" duration-ms="2" started-at="2019-06-06T15:13:43Z" finished-at="2019-06-06T15:13:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- upload2 -->
+        <test-method status="SKIP" signature="upload3()[pri:0, instance:com.xamplify.login.UploadVideo@53045c6c]" name="upload3" duration-ms="2" started-at="2019-06-06T15:13:43Z" finished-at="2019-06-06T15:13:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- upload3 -->
+        <test-method status="SKIP" signature="uploadvideo()[pri:0, instance:com.xamplify.login.UploadVideo@53045c6c]" name="uploadvideo" is-config="true" duration-ms="0" started-at="2019-06-06T15:13:43Z" finished-at="2019-06-06T15:13:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadvideo -->
+        <test-method status="SKIP" signature="uploadvideo()[pri:0, instance:com.xamplify.login.UploadVideo@53045c6c]" name="uploadvideo" is-config="true" duration-ms="0" started-at="2019-06-06T15:13:43Z" finished-at="2019-06-06T15:13:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadvideo -->
+        <test-method status="SKIP" signature="upload4()[pri:0, instance:com.xamplify.login.UploadVideo@53045c6c]" name="upload4" duration-ms="6" started-at="2019-06-06T15:13:43Z" finished-at="2019-06-06T15:13:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- upload4 -->
+      </class> <!-- com.xamplify.login.UploadVideo -->
+    </test> <!-- Test_UploadVideo -->
   </suite> <!-- Suite -->
 </testng-results>
