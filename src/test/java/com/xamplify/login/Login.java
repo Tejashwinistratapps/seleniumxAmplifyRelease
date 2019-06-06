@@ -26,8 +26,7 @@ public class Login {
 	@Test(priority=2,enabled=true)
 	public void login() throws InterruptedException, SQLException {
 
-		//driver.findElement(By.xpath(prop.getProperty("loginclick"))).click();
-		//Thread.sleep(5000);
+		
 		driver.findElement(By.id(prop.getProperty("email"))).sendKeys(prop.getProperty("user.name"));
 		driver.findElement(By.id(prop.getProperty("password"))).sendKeys(prop.getProperty("user.password"));
 		driver.findElement(By.id(prop.getProperty("signin"))).click();
