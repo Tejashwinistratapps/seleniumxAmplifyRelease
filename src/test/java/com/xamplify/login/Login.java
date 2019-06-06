@@ -19,7 +19,7 @@ public class Login {
 	driver.get(prop.getProperty("baseUrl"));
 	
 	driver.manage().window().maximize();
-	//ggfdfdf
+	//ggfdfdfnnvnv
 	Thread.sleep(3000);
 	}
 
