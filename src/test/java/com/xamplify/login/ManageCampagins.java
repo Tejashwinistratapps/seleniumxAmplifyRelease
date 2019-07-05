@@ -14,7 +14,7 @@ public class ManageCampagins {
 	WebDriver driver = Instance.getInstance();
 	Properties properties = PropertiesFile.readPropertyFile("rdata.properties");
 
-	@Test(priority = 41, enabled = true)
+	@Test(priority =301, enabled = true)
 
 	public void manage_campaign() throws InterruptedException {
 		Thread.sleep(5000);
