@@ -20,10 +20,6 @@ public class ManageCampagins {
 
 	public void manageCampaignClicks() throws InterruptedException {
 		Thread.sleep(5000);
-		/*
-		 * driver.get("https://release.xamplify.io/home/dashboard/welcome");
-		 * Thread.sleep(5000);
-		 */
 		
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 
