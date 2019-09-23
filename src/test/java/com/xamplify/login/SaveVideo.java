@@ -35,18 +35,9 @@ public class SaveVideo extends VideoCampaign {
 		Thread.sleep(5000);
 		
 		
-		
-		
 		driver.findElement(By.xpath(properties.getProperty("vsaved"))).click();
 		Thread.sleep(5000);
 	}
-	/*driver.findElement(By.xpath(properties.getProperty("a_r_w_v_schdul"))).click();
-	Thread.sleep(5000);
-	WebElement dateTable = driver.findElement(By.xpath(properties.getProperty("a_r_w_v_date")));
-    dateTable.click();
-    
-    		WebElement we1=driver.findElement(By.xpath(properties.getProperty("slct_a_r_w_v_date")));
-    		we1.click();
-	Thread.sleep(8000);*/
+
 	
 }

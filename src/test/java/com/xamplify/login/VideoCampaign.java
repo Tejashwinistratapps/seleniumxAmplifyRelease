@@ -24,7 +24,7 @@ import org.testng.annotations.BeforeMethod;
 		 
 			Properties properties = PropertiesFile.readPropertyFile("rdata.properties");
 
-			//@BeforeMethod   [for auto responses...comment @test annotation ,use @Beforemethod  ]
+		//@BeforeMethod   [for auto responses...comment @test annotation ,use @Beforemethod  ]
 			@Test
 			public void vdecampaign() throws InterruptedException, SQLException {
 				driver.get("https://release.xamplify.io/home/dashboard/welcome");

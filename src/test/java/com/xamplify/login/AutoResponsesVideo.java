@@ -19,7 +19,8 @@ public class AutoResponsesVideo extends VideoCampaign {
 		driver.findElement(By.xpath("html/body")).click();
 		driver.switchTo().activeElement().sendKeys("H:send if not clicked,please click d mail");
 		driver.switchTo().defaultContent();
-// auto response 2 //
+		
+      // auto response 2 //
  
 	driver.findElement(By.xpath(properties.getProperty("auto_rspnse_website_vst2"))).click();
 	Thread.sleep(5000);
@@ -181,7 +182,7 @@ public class AutoResponsesVideo extends VideoCampaign {
 	Select arve_vde5 = new Select(rdrpdwnv5);
 	Thread.sleep(5000);
 	arve_vde5.selectByValue("18");
-	Thread.sleep(8000);
+	Thread.sleep(7000);
 
 	driver.findElement(By.xpath(properties.getProperty("a_r_e_v_sub5"))).sendKeys("s;video is not  played..");
 	Thread.sleep(5000);

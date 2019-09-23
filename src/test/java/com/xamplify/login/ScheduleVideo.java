@@ -19,8 +19,7 @@ public class ScheduleVideo extends VideoCampaign {
 	WebElement dateTable = driver.findElement(By.xpath(properties.getProperty("v_schdule_date")));
     dateTable.click();
     
-   // if()
-    
+  
     
     		WebElement we1=driver.findElement(By.xpath(properties.getProperty("v_schdule_selectdate")));
     		we1.click();

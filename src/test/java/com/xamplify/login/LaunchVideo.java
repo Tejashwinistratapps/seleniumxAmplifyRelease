@@ -16,7 +16,8 @@ public class LaunchVideo extends VideoCampaign {
 	
 	driver.findElement(By.xpath(properties.getProperty("video_launch"))).click();				//click LAUNCH
 	
-	Thread.sleep(8000);
+	Thread.sleep(7000);
+
 	
 }
 }
