@@ -1,0 +1,38 @@
+#############################################Manage Videos#############
+Sort_az=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/select[1]
+Sort_za=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/select[1]
+Sort_date_asc=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/select[1]
+Sort_date_desc=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/select[1]
+
+select_category=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/select[1]
+mv_gridview=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/span[2]/i[1]
+mv_gridview_search=//input[@placeholder='Search for a Video']
+mv_gridview_search_click=//i[@class='fa fa-search']
+select_allcategory=/html/body/app-root/app-home/div/div/app-manage-video/div/div[2]/div/div[2]/div/div/div[1]/div[1]/div/div/div[1]/select
+mv_Listview=//i[@class='fa fa-th-list p10']
+mv_crt_cmpgn=//tr[1]//td[4]//div[1]//a[2]//i[1]
+mv_crt_cmpgn_check=//label[contains(text(),'Campaign name')]
+mv_cmpgn_home=//a[contains(text(),'Home')]
+mv_cmpgn_no=//button[@class='swal2-cancel styled']
+mv_anlytcs_hover=//div[@class='tab-pane active']//div[1]//div[1]//div[3]//div[1]//a[2]//i[1]
+mv_anlytcs_hover_check=//span[@class='caption-subject font-red-sunglo uppercase']
+mv_anlytcs_mngevdes=//a[contains(text(),'Manage Videos')]
+
+mv_edit_icon=//i[@class='fa fa-pencil-square-o']
+mv_select_category=//select[@title='select a category']
+mv_tags=//input[@placeholder='Add a tag & press Enter']
+mv_slct_scndradio=//input[@value='2']
+mv_upld_thumnail=//input[@id='ownFileuplad']
+mv_vdeappearnce_clck=//div[@class='portlet box blue']//div[@class='col-xs-12 caption p01']
+mv_vdeappearnce_toggle_off=//div[@class='bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-animate bootstrap-switch-off bootstrap-switch-small']//span[@class='bootstrap-switch-label']
+mv_vdeappearnce_toggle_on=/html/body/app-root/app-home/div/div/app-manage-video/div/app-edit-video/div/div/div/div[2]/form/div/div[3]/div[2]/div/div/div[1]/div/switch/div/div/span[3]
+mv_vdeappearnce_toggle_again_off=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/app-edit-video[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[9]/div[1]/switch[1]/div[1]/div[1]/span[2]
+mv_toparrow_button=//img[@id='myBtn']
+mv_title=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/app-edit-video[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/input[1]
+mv_saveorupdate=/html/body/app-root/app-home/div/div/app-manage-video/div/app-edit-video/div/div/div/div[2]/form/div/div[1]/div/div/button[1]
+mv_responseMessage=//span[@id='responseMessage']
+mv_clr_srch=/html/body/app-root/app-home/div/div/app-manage-video/div/div[2]/div/div[2]/div/div/div[1]/div[1]/div/div/div[4]/div/button[1]
+mv_dlticon_hover=//div[@class='tab-pane active']//div[1]//div[1]//div[3]//div[1]//a[3]
+mv_dlticon=/html/body/app-root/app-home/div/div/app-manage-video/div/div[2]/div/div[2]/div/div/div[1]/div[2]/section[2]/div[1]/div/div[3]/div/a[3]/i
+mv_dlticon_yes=//button[@class='swal2-confirm styled']
+
