@@ -19,6 +19,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.BeforeMethod;
@@ -26,212 +27,218 @@ import org.testng.annotations.Test;
 
 public class UploadVideo
 {
-	 WebDriver driver = Instance.getInstance();
-	 
-		Properties properties = PropertiesFile.readPropertyFile("rdata.properties");
-		
+	WebDriver driver = Instance.getInstance();
 
-		@BeforeMethod
-		
-		public void uploadvideo() throws InterruptedException, SQLException, IOException
-		{
-			driver.get("baseurlwelcome");
+	Properties properties = PropertiesFile.readPropertyFile("rdata.properties");
+
+
+	@BeforeMethod
+
+	public void uploadvideo() throws InterruptedException, SQLException, IOException
+	{
+		driver.get("https://release.xamplify.io/home/dashboard");
+
 		Thread.sleep(3000);
-		WebElement ele = driver.findElement(By.xpath(properties.getProperty("Content_Mousehover")));
+		WebElement ele = driver.findElement(By.xpath(properties.getProperty("Content_Mousehover")));//mouse hover to content
 		Actions act = new Actions(driver);
 		act.moveToElement(ele).perform();
 		Thread.sleep(5000);
-		driver.findElement(By.xpath(properties.getProperty("Upload_Click"))).click();
-		Thread.sleep(10000);
+		driver.findElement(By.xpath(properties.getProperty("Upload_contentclick"))).click();//click on upload content
+		Thread.sleep(8000);
 
+	}
+
+	@Test(priority=41,enabled=true)
+	public void upload_browse() throws InterruptedException, IOException {
 
 
 		//logger.debug("starting video browse");
-
-		driver.findElement(By.xpath(properties.getProperty("vBrowse_click"))).click();
+		//driver.get("https://release.xamplify.io/home/videos/upload");
+		//Thread.sleep(3000);
+		driver.findElement(By.xpath(properties.getProperty("vBrowse_click"))).click();//click on browse
 
 		Thread.sleep(10000);
 
-		Runtime.getRuntime().exec(properties.getProperty("AutoIt")); 
+		Runtime.getRuntime().exec(properties.getProperty("AutoIt")); //to execute auto it file
 		Thread.sleep(10000);
-		driver.findElement(By.xpath(properties.getProperty("vBrowse_Upload"))).click();
-		Thread.sleep(15000);
-		driver.findElement(By.xpath(properties.getProperty("vBrowse_Home_click"))).click();
+		driver.findElement(By.xpath(properties.getProperty("vBrowse_Upload"))).click();//click on upload 
+		Thread.sleep(7000);
+		driver.findElement(By.xpath(properties.getProperty("vBrowse_Home_click"))).click();//click on home 
 		Thread.sleep(3000);
 		//logger.debug(" video is processing");
 
-		driver.findElement(By.xpath(properties.getProperty("vBrowse_popupsave"))).click();
+		driver.findElement(By.xpath(properties.getProperty("vBrowse_popupsave"))).click();//save the popup
 		Thread.sleep(10000);
 		///logger.debug("end video upload browse");
-		
-		}
-		@Test(priority=111,enabled=true)
-		public void upload1() throws InterruptedException {
 
-		Thread.sleep(3000);
-		WebElement ele111 = driver.findElement(By.xpath(properties.getProperty("Content_Mousehover")));
-		Actions act111 = new Actions(driver);
-		act111.moveToElement(ele111).perform();
-		Thread.sleep(5000);
-		driver.findElement(By.xpath(properties.getProperty("Upload_Click"))).click();
-		Thread.sleep(10000);
+	}
+	@Test(priority=42,enabled=true)
+	public void upload_web() throws InterruptedException {
+
+		/*Thread.sleep(3000);
+
 		//logger.debug("starting record video from webcam");
-
-
-		driver.findElement(By.xpath(properties.getProperty("webclick"))).click();
+		 */
+		/*driver.get("https://release.xamplify.io/home/videos/upload");*/
+		Thread.sleep(3000);
+		driver.findElement(By.xpath(properties.getProperty("webclick"))).click();//click on web
 		Thread.sleep(5000);
-		driver.findElement(By.xpath(properties.getProperty("camclick"))).click();
+		driver.findElement(By.xpath(properties.getProperty("camclick"))).click();//click on camera icon
 		Thread.sleep(3000);
-		driver.findElement(By.xpath(properties.getProperty("record"))).click();
-		Thread.sleep(6000);
-		driver.findElement(By.xpath(properties.getProperty("stop"))).click();
+		driver.findElement(By.xpath(properties.getProperty("record"))).click();//click on record button
+		Thread.sleep(11000);
+		driver.findElement(By.xpath(properties.getProperty("stop"))).click();//click to stop the recording
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//button[contains(text(),'Upload')]")).click();
-		Thread.sleep(15000);
-		driver.findElement(By.xpath(properties.getProperty("vBrowse_Home_click"))).click();
+		driver.findElement(By.xpath("//button[contains(text(),'Upload')]")).click();//click on upload button
+		Thread.sleep(8000);
+		driver.findElement(By.xpath(properties.getProperty("vBrowse_Home_click"))).click();//click on home 
 		Thread.sleep(3000);
-		driver.findElement(By.xpath(properties.getProperty("vBrowse_popupsave"))).click();
-		
+		//driver.navigate().refresh();
+
+		//	driver.findElement(By.xpath(properties.getProperty("vBrowse_popupsave"))).click();
+
 		//driver.findElement(By.xpath("//button[@class='btn btn-danger']")).click();	
 		//driver.findElement(By.xpath(properties.getProperty("crossclick"))).click();
-		Thread.sleep(6000);
+
 		//logger.debug("end record video from webcam");
-		}
-		
+	}
 
-		@Test(priority=112,enabled=true)
-		public void upload2() throws InterruptedException {
-		
-		
-		Thread.sleep(3000);
-		WebElement eledb = driver.findElement(By.xpath(properties.getProperty("Content_Mousehover")));
-		Actions actdb = new Actions(driver);
-		actdb.moveToElement(eledb).perform();
-		Thread.sleep(5000);
-		driver.findElement(By.xpath(properties.getProperty("Upload_Click"))).click();
-		Thread.sleep(10000);
+
+	@Test(priority=43,enabled=true)
+	public void upload_dropbox() throws InterruptedException {
+
+
+		//Thread.sleep(3000);
+		/*
 	//	logger.debug("Starting select video from dropbox");
+		 */
+		/*driver.get("https://release.xamplify.io/home/videos/upload");*/
+		Thread.sleep(3000);
+		driver.findElement(By.xpath(properties.getProperty("vdropbox_click"))).click();//click on dropbox
 
-		driver.findElement(By.xpath(properties.getProperty("vdropbox_click"))).click();
-
-		Set<String> hashset = (HashSet<String>) driver.getWindowHandles();
-		List<String> list = new ArrayList<String>(hashset);
+		Set<String> hashset = (HashSet<String>) driver.getWindowHandles();//to handle the windows
+		List<String> list = new ArrayList<String>(hashset);//to get the lists 
 		System.out.println(list.toString());
 
 		Thread.sleep(5000);
 
-		driver.switchTo().window(list.get(1));
+		driver.switchTo().window(list.get(1));//to switch the current window
 		System.out.println(list.get(1));
 
-		Thread.sleep(17000);
+		Thread.sleep(8000);
 
-		driver.findElement(By.xpath(properties.getProperty("vdropbox_signin"))).click();
+		driver.findElement(By.xpath(properties.getProperty("vdropbox_signin"))).click();//sign in to drop box
 
-		WebElement EmailidElement = driver.findElement(By.xpath(properties.getProperty("vdrop_box_username_click"))); 
-		EmailidElement.sendKeys(properties.getProperty("vdrop_box_username"));
-		driver.findElement(By.xpath(properties.getProperty("vdrop_box_next_click"))).click();
+		WebElement EmailidElement = driver.findElement(By.xpath(properties.getProperty("vdrop_box_username_click"))); //dropbox username to click 
+		EmailidElement.sendKeys(properties.getProperty("vdrop_box_username"));//enter the username
+		driver.findElement(By.xpath(properties.getProperty("vdrop_box_next_click"))).click();//click for  next 
 
 		Thread.sleep(3000);
 
-		WebElement EmailpwdElement = driver.findElement(By.name(properties.getProperty("vdrop_box_pwd_click"))); 
-		EmailpwdElement.sendKeys(properties.getProperty("vdrop_box_pwd"));
-		driver.findElement(By.xpath(properties.getProperty("vdrop_box_pwd_next"))).click();
+		WebElement EmailpwdElement = driver.findElement(By.name(properties.getProperty("vdrop_box_pwd_click"))); //password field to click
+		EmailpwdElement.sendKeys(properties.getProperty("vdrop_box_pwd"));//to enter the password
+		driver.findElement(By.xpath(properties.getProperty("vdrop_box_pwd_next"))).click();//click for next 
 
-		Thread.sleep(20000);				
+		Thread.sleep(8000);				
 
 		driver.findElement(By.className(properties.getProperty("vdrop_box_item_select"))).click();
-		driver.findElement(By.xpath(properties.getProperty("vdrop_box_choose"))).click();
+		driver.findElement(By.xpath(properties.getProperty("vdrop_box_choose"))).click();//to click for selected video
 
 		Thread.sleep(8000);
 
-		driver.switchTo().window(list.get(0));
+		driver.switchTo().window(list.get(0));//switch to window
 
-		driver.findElement(By.xpath(properties.getProperty("vBrowse_Home_click"))).click();
-		driver.findElement(By.xpath(properties.getProperty("vBrowse_popupsave"))).click();
-
-		Thread.sleep(10000);
-		}
-		
-
-		@Test(priority=113,enabled=true)
-		public void upload3() throws InterruptedException {
-		
-		
-		
-		//logger.debug("end select video from dropbox");
-		WebElement ele11 = driver.findElement(By.xpath(properties.getProperty("Content_Mousehover")));
-		Actions act11 = new Actions(driver);
-		act11.moveToElement(ele11).perform();
-		Thread.sleep(5000);
-		driver.findElement(By.xpath(properties.getProperty("Upload_Click"))).click();
-		Thread.sleep(10000);
-
-		//logger.debug("Starting select video from box");
-
-		Thread.sleep(5000);
-
-		driver.findElement(By.xpath(properties.getProperty("vbox_click"))).click();
-
-		Set<String> hashset1 = (HashSet<String>) driver.getWindowHandles();
-		List<String> list1 = new ArrayList<String>(hashset1);
-		System.out.println(list1.toString());
-
-		Thread.sleep(5000);
-
-		driver.switchTo().window(list1.get(1));
-		System.out.println(list1.get(1));
-
-		Thread.sleep(17000);
-
-		WebElement EmailidElement1 = driver.findElement(By.name(properties.getProperty("vbox_login"))); 
-		EmailidElement1.sendKeys(properties.getProperty("vbox_Username"));
-
-		driver.findElement(By.xpath(properties.getProperty("vbox_login_submit"))).click();
-
+		driver.findElement(By.xpath(properties.getProperty("vBrowse_Home_click"))).click();//click for home 
 		Thread.sleep(3000);
 
-		WebElement EmailpwdElement1 = driver.findElement(By.name(properties.getProperty("vbox_pwd_click"))); 
-		EmailpwdElement1.sendKeys(properties.getProperty("vbox_pwd"));
-
-		driver.findElement(By.xpath(properties.getProperty("vbox_submit"))).click();
-
-		Thread.sleep(12000);
-
-		WebElement radio1=driver.findElement(By.xpath(properties.getProperty("vbox_item_radio")));
-		radio1.click();
-
-		driver.findElement(By.xpath(properties.getProperty("vbox_item_select"))).click();
-
+		driver.findElement(By.xpath(properties.getProperty("vBrowse_popupsave"))).click();//save the popup
 		Thread.sleep(5000);
 
-		driver.switchTo().window(list1.get(0));
 
-		driver.findElement(By.xpath(properties.getProperty("vBrowse_Home_click"))).click();
-		driver.findElement(By.xpath(properties.getProperty("vBrowse_popupsave"))).click();
 
-		Thread.sleep(10000);
+	}
 
-		//logger.debug("end select video from box");
-		
-		}
-		
 
-		@Test(priority=114,enabled=true)
-		public void upload4() throws InterruptedException {
+	/**
+	 * @throws InterruptedException
+	 */
+	@Test(priority=44,enabled=true)
+	public void upload_box() throws InterruptedException {
 
-		WebElement ele3 = driver.findElement(By.xpath(properties.getProperty("Content_Mousehover")));
-		Actions act3 = new Actions(driver);
-		act3.moveToElement(ele3).perform();
-		Thread.sleep(8000);
-		driver.findElement(By.xpath(properties.getProperty("Upload_Click"))).click();
-		Thread.sleep(10000);
 
-		//logger.debug("selecting video from google drive");
+		/*
 
-		driver.findElement(By.xpath(properties.getProperty("GD_click"))).click();
+
+		//logger.debug("Starting select video from box");
+		 */
+		/*		driver.get("https://release.xamplify.io/home/videos/upload");
+		 */		Thread.sleep(3000);
+		 driver.findElement(By.xpath(properties.getProperty("vbox_click"))).click();//click for box
+
+		 Set<String> hashset1 = (HashSet<String>) driver.getWindowHandles();//to handle the windows
+		 List<String> list1 = new ArrayList<String>(hashset1);//get all the lists
+		 System.out.println(list1.toString());
+
+		 Thread.sleep(5000);
+
+		 driver.switchTo().window(list1.get(1));//switch to the window
+		 System.out.println(list1.get(1));
+
+		 Thread.sleep(7000);
+
+		 WebElement EmailidElement1 = driver.findElement(By.name(properties.getProperty("vbox_login"))); //click for box to login 
+		 EmailidElement1.sendKeys(properties.getProperty("vbox_Username"));//to enter the user name for box
+
+		 driver.findElement(By.xpath(properties.getProperty("vbox_login_submit"))).click();//next 
+
+		 Thread.sleep(3000);
+
+		 WebElement EmailpwdElement1 = driver.findElement(By.name(properties.getProperty("vbox_pwd_click"))); //click for password field
+		 EmailpwdElement1.sendKeys(properties.getProperty("vbox_pwd"));//to enter the password  for box
+
+		 driver.findElement(By.xpath(properties.getProperty("vbox_submit"))).click();//next
+
+		 Thread.sleep(8000);
+
+		 driver.findElement(By.xpath(properties.getProperty("vbox_filter"))).click();//click for filter 
+		 Thread.sleep(4000);
+
+
+		 driver.findElement(By.xpath(properties.getProperty("vbox_filter_clickdate"))).click();//click for date filter
+		 Thread.sleep(8000);
+		 driver.findElement(By.xpath(properties.getProperty("vbox_filter_clickdate_oldest"))).click();//click on oldest option
+		 Thread.sleep(5000);
+		 WebElement radio1=driver.findElement(By.xpath(properties.getProperty("vbox_item_radio")));//to choose the video
+		 radio1.click();
+
+		 driver.findElement(By.xpath(properties.getProperty("vbox_item_select"))).click();//selected video 
+
+		 Thread.sleep(5000);
+
+		 driver.switchTo().window(list1.get(0));//switch to the window
+
+
+		 driver.findElement(By.xpath(properties.getProperty("vBrowse_Home_click"))).click();//click for home
+		 Thread.sleep(3000);
+
+		 driver.findElement(By.xpath(properties.getProperty("vBrowse_popupsave"))).click();//popup to save
+		 Thread.sleep(3000);
+		 //driver.navigate().refresh();
+
+
+		 //logger.debug("end select video from box");
+
+	}
+
+
+	@Test(priority=45,enabled=false)
+	public void upload_gdrive() throws InterruptedException {
+
+		Thread.sleep(3000);
+		driver.findElement(By.xpath(properties.getProperty("GD_click"))).click();//click for google drive
 		Thread.sleep(5000);
 
-		Set<String> hashset2 = (HashSet<String>) driver.getWindowHandles();
+		Set<String> hashset2 = (HashSet<String>) driver.getWindowHandles();//to handle the multiple windows
 		List<String> list2 = new ArrayList<String>(hashset2);
 		System.out.println(list2.toString());
 		System.out.println("size of current windows " + list2.size());
@@ -245,21 +252,20 @@ public class UploadVideo
 			Thread.sleep(5000);
 
 			driver.switchTo().window(list21.get(1));
-			//System.out.println("Google drive window" +list21.get(1));
-			//System.out.println("switched to googledrive window");
-			Thread.sleep(3000);
-
-			WebElement EmailidElement2 = driver.findElement(By.id(properties.getProperty("GD_username_click")));
-			EmailidElement2.sendKeys(properties.getProperty("GD_username"));
-
-			driver.findElement(By.xpath(properties.getProperty("GD_Next"))).click();
 
 			Thread.sleep(3000);
 
-			WebElement PwdElement2 = driver.findElement(By.xpath(properties.getProperty("GD_pwd_click")));
-			PwdElement2.sendKeys(properties.getProperty(("GD_pwd")));
+			WebElement EmailidElement2 = driver.findElement(By.id(properties.getProperty("GD_username_click")));//click for username field
+			EmailidElement2.sendKeys(properties.getProperty("GD_username"));//to enter data for username
 
-			driver.findElement(By.xpath(properties.getProperty("GD_Next1"))).click();
+			driver.findElement(By.xpath(properties.getProperty("GD_Next"))).click();//next to click 
+
+			Thread.sleep(3000);
+
+			WebElement PwdElement2 = driver.findElement(By.xpath(properties.getProperty("GD_pwd_click")));//click for password field
+			PwdElement2.sendKeys(properties.getProperty(("GD_pwd")));//to enter data for password
+
+			driver.findElement(By.xpath(properties.getProperty("GD_Next1"))).click();//next
 			Thread.sleep(4000);
 			driver.switchTo().window(list2.get(0));
 			Thread.sleep(10000);
@@ -295,24 +301,16 @@ public class UploadVideo
 		Thread.sleep(3000);
 		//driver.close();
 
-		}
-/*
-	driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-upload-video[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/img[1]")).click();
-	Thread.sleep(5000);
-	driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-upload-video[1]/div[1]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[2]/button[1]")).click();
-	Thread.sleep(5000);
-	
-	Map<String, Object> prefs = new HashMap<String, Object>();
-	prefs.put("profile.default_content_setting_values.notifications", 2);
-	ChromeOptions options = new ChromeOptions();
-	options.setExperimentalOption("prefs", prefs);
-	Thread.sleep(4000);
+	}
+	/*
+
+
 	driver.switchTo().alert().accept();
 
-*/
+	 */
 
 }
-	
-	
 
-	
+
+
+
