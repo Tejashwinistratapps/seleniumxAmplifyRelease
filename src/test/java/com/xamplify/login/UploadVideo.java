@@ -29,7 +29,7 @@ public class UploadVideo
 {
 	WebDriver driver = Instance.getInstance();
 
-	Properties properties = PropertiesFile.readPropertyFile("rdata.properties");
+	Properties properties = PropertiesFile.readPropertyFile("rdata.properties");//properties file
 
 
 	@BeforeMethod
