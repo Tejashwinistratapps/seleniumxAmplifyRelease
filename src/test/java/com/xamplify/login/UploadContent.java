@@ -29,7 +29,7 @@ public class UploadContent
 	{
 
 		Thread.sleep(5000);
-		WebElement ele = driver.findElement(By.xpath(properties.getProperty("Content_Mousehover")));//hover to contentjj
+		WebElement ele = driver.findElement(By.xpath(properties.getProperty("Content_Mousehover")));//hover to content
 		Actions act = new Actions(driver);
 		act.moveToElement(ele).perform();
 		Thread.sleep(5000);
