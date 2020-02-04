@@ -19,16 +19,15 @@ public class UploadContent
 {
 
 
-	 WebDriver driver = Instance.getInstance();
-	 
-		Properties properties = PropertiesFile.readPropertyFile("rdata.properties");//properties file
-		
+	WebDriver driver = Instance.getInstance();
 
-		@BeforeMethod
-		
-		public void upload_Content() throws InterruptedException, SQLException, IOException
-		{
-			
+	Properties properties = PropertiesFile.readPropertyFile("rdata.properties");//properties file
+
+	@BeforeMethod
+
+	public void upload_Content() throws InterruptedException, SQLException, IOException
+	{
+
 		Thread.sleep(5000);
 		WebElement ele = driver.findElement(By.xpath(properties.getProperty("Content_Mousehover")));//hover to content
 		Actions act = new Actions(driver);
@@ -38,7 +37,7 @@ public class UploadContent
 		Thread.sleep(10000);
 
 		//Browse//
-		
+
 
 		driver.findElement(By.xpath(properties.getProperty("cBrowse_click"))).click();//browse to click
 
@@ -47,12 +46,12 @@ public class UploadContent
 		Runtime.getRuntime().exec(properties.getProperty("cAutoIt")); //to run auto it file
 		System.out.println("successfully uploaded the Content from local");
 		Thread.sleep(8000);
-		}
-		
-		@Test(priority=56,enabled=true)
-		public void upload_Dropbox() throws InterruptedException {
-			
-		
+	}
+
+	@Test(priority=56,enabled=true)
+	public void upload_Dropbox() throws InterruptedException {
+
+
 		//UploadClick-1//
 		Thread.sleep(3000);
 		WebElement ele1 = driver.findElement(By.xpath(properties.getProperty("Content_Mousehover")));//hover to content
@@ -81,13 +80,10 @@ public class UploadContent
 
 		driver.findElement(By.xpath(properties.getProperty("vdropbox_signin"))).click();//drop box sign in
 
-
 		WebElement emailidElement = driver.findElement(By.xpath(properties.getProperty("vdrop_box_username_click"))); //user name for drop box
 		emailidElement.sendKeys(properties.getProperty("vdrop_box_username"));//enter user name
 		driver.findElement(By.xpath(properties.getProperty("vdrop_box_next_click"))).click();//click next
-
 		Thread.sleep(3000);
-
 		WebElement EmailpwdElement = driver.findElement(By.name(properties.getProperty("vdrop_box_pwd_click"))); //password for drop box
 		EmailpwdElement.sendKeys(properties.getProperty("vdrop_box_pwd"));//enter password
 		driver.findElement(By.xpath(properties.getProperty("vdrop_box_pwd_next"))).click();//click for next
@@ -103,12 +99,12 @@ public class UploadContent
 		driver.findElement(By.xpath(properties.getProperty("cdrop_box_after_home"))).click();//click for home
 		System.out.println("successfully uploaded the Content from DropBox");
 		Thread.sleep(5000);
-		}
-		
-		@Test(priority=57,enabled=true)
-		public void upload_Box() throws InterruptedException {
-			
-		
+	}
+
+	@Test(priority=57,enabled=true)
+	public void upload_Box() throws InterruptedException {
+
+
 		//UploadClick-2//
 		Thread.sleep(3000);
 		WebElement ele2 = driver.findElement(By.xpath(properties.getProperty("Content_Mousehover")));//hover to content
@@ -158,11 +154,11 @@ public class UploadContent
 		driver.findElement(By.xpath(properties.getProperty("cbox_after_home"))).click();//click for home
 		System.out.println("successfully uploaded the Content from Box");
 		Thread.sleep(10000);
-		}
-		
-		@Test(priority=58,enabled=false)
-		public void upload_Googledrive() throws InterruptedException {
-			
+	}
+
+	@Test(priority=58,enabled=false)
+	public void upload_Googledrive() throws InterruptedException {
+
 		//UploadClick-2//
 		Thread.sleep(3000);
 		WebElement ele3 = driver.findElement(By.xpath(properties.getProperty("Content_Mousehover")));
