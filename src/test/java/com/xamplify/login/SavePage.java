@@ -11,7 +11,7 @@ public class SavePage extends PageCampaign {
 	{
 		 	Thread.sleep(4000);
 
-		driver.findElement(By.xpath(properties.getProperty("p_save"))).click();//click on saves
+		driver.findElement(By.xpath(properties.getProperty("p_save"))).click();//click on save
 	 	Thread.sleep(4000);
 
 	    driver.findElement(By.xpath(properties.getProperty("p_saved"))).click();	//click on save last
