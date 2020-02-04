@@ -1,0 +1,45 @@
+
+
+
+############################################Page Campaign#########################################################################
+page_campaignhover=//span[@class='title'] [contains(text(),'Campaign')]
+page_createcampaign=//span[contains(text(),'Create Campaign')]
+page_openecampaign=//h4[contains(text(),'Page')]
+pwrite_campaigname=Pagecampaign1
+pcampaignName=campaignName
+p_through_campaign=//form[@id='campaignDetailsForm']/div/div/div/div/div[2]/div/div/div/div/switch/div/div
+p_subject=subjectLineId
+p_preheader=preHeader
+p_Notify_Me_emailon=//form[@id='campaignDetailsForm']/div/div/div/div/div[9]/div/div/div/div/switch/div/div/span[3]
+p_Notify_Me_link_opened=//form[@id='campaignDetailsForm']/div/div/div/div/div[9]/div/div/div[2]/div/switch/div/div/span[3]
+p_Pushto=//switch[@id='falseAction']/div/div/span[3]
+p_Pushtomarketo=//form[@id='campaignDetailsForm']/div/div/div/div/div[10]/div[2]/div/div/div/div/label/span
+p_Pushtohubspot=//form[@id='campaignDetailsForm']/div/div/div/div/div[10]/div[2]/div/div[2]/div/div/label/span
+p_next1=//div[2]/div/div/div[3]/div
+p_select_partnerlist=//div[@id='step4']/div
+p_select_partnerlist_preview=//tr[@id='campaignContactListTable_4198']/td[2]
+p_select_partnerlist_preview_close=//tr[@id='campaignContactListTable_4198']/td[4]/a/i
+p_next2=(//button[@type='button'])[9]
+p_select_template=//div[@id='step5']/div
+p_select_template_preview=//div[@id='user_list_tb_wrapper']/div/ul/li/div/div[2]
+p_select_template_preview_close=//div[@id='user_list_tb_wrapper']/div/ul/li/div/div[2]/div/div/span/a/i
+p_search=float-right
+p_search1=(//input[@type='text'])[10]
+p_next3=//div[@id='step6']/div
+p_now=//div[@id='step-6']/form/div[3]/div/div/div/label
+
+
+p_nowlaunch=(//button[@type='submit'])[7]
+p_response=//app-response-message/div/div/h4
+
+p_schedule=//*[@id="step-6"]/form/div[3]/div/div[1]/div[1]/label[2]
+
+psch_click=//*[@id=\"step-6\"]/form/div[3]/div/div[1]/div[2]/div[1]/input
+
+psch_date_click1=//span[@class='flatpickr-day today']
+psch_date_hour=//input[@class='numInput flatpickr-hour']
+psch_date_min=//input[@class='numInput flatpickr-minute']
+pselect_country=//*[@id="countryName"]
+p_schedulelast=//button[contains(text(),'Schedule')]
+p_save=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[1]/div[1]/label[3]
+p_saved=//button[contains(text(),'Save')]
