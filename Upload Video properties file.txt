@@ -1,6 +1,11 @@
-#####################UploadContent##################################################################################################################
+#####################UploadContent-video##################################################################################################################
 Content_Mousehover=//a[@href='javascript:;']//i[@class='fa fa-cloud-upload']
-Upload_Click=//span[@class='title'][contains(text(),'Upload Content')]
+
+Upload_contentclick=//span[contains(text(),'Upload Content')]
+
+
+
+
 
 #Uploadvideo_Browse###############################################################################################################
 vBrowse_click=//div[@class='col-xs-12']//button[@class='btn btn-primary'][contains(text(),'Browse')]
