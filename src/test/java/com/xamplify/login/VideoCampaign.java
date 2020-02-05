@@ -19,6 +19,8 @@ import org.testng.annotations.BeforeMethod;
 
 
 	public class VideoCampaign {
+	    private static String z = "";
+
 		
 		 WebDriver driver = Instance.getInstance();
 		 
@@ -34,18 +36,14 @@ import org.testng.annotations.BeforeMethod;
 				WebDriverWait waitv = new WebDriverWait(driver, 30);
 
 				// Wait till the element is not visible
+				WebElement campele = waitv.until(
+						ExpectedConditions.visibilityOfElementLocated(By.xpath(properties.getProperty("e_campaignhover"))));
+				campele.click(); // hover on campaign
 
-				WebElement vcampele = waitv.until(
-						ExpectedConditions.visibilityOfElementLocated(By.xpath(properties.getProperty("campaign_hover_v"))));
-				vcampele.click();
-				
-				
-				
-				
 				Actions camp_action = new Actions(driver);
-				camp_action.moveToElement(vcampele).perform();
+				camp_action.moveToElement(campele).perform();
 				Thread.sleep(5000);
-				WebElement create_campele = driver.findElement(By.xpath(properties.getProperty("vcreatecampaign")));
+				WebElement create_campele = driver.findElement(By.xpath(properties.getProperty("e_createcampaign"))); //click on create campaign
 				camp_action.moveToElement(create_campele);
 				camp_action.click();
 				camp_action.perform();
@@ -68,11 +66,23 @@ import org.testng.annotations.BeforeMethod;
 				Thread.sleep(5000);
 				//if(campaignNames.indexOf(campaignNameFromProp)>-1) {
 				driver.findElement(By.id(properties.getProperty("vcampaignName"))).clear();
-				driver.findElement(By.id(properties.getProperty("vcampaignName"))).sendKeys(properties.getProperty("vwrite_campaign")+"_"+System.currentTimeMillis());	
+				
+				WebElement vcampaignName=driver.findElement(By.id(properties.getProperty("vcampaignName")));
+				vcampaignName.sendKeys(properties.getProperty("vwrite_campaign")+"_"+System.currentTimeMillis());
+				System.out.println(vcampaignName.getAttribute("value"));
+				  
+//				driver.findElement(By.id(properties.getProperty("vcampaignName"))).sendKeys(properties.getProperty("vwrite_campaign")+"_"+System.currentTimeMillis());
+				Thread.sleep(2000);
+				  
+
+				
+				String getcampaignname = vcampaignName.getAttribute("value");
+
+		        z = getcampaignname;
+
 				//}
 				
 				
-			
 			
 				Thread.sleep(1000);
 				driver.findElement(By.xpath(
@@ -90,13 +100,17 @@ import org.testng.annotations.BeforeMethod;
 				Thread.sleep(3000);
 
 				driver.findElement(By.xpath(properties.getProperty("vnotifyme_email"))).click();
+				driver.findElement(By.xpath(properties.getProperty("vnotifyme_link"))).click();
+
 				driver.findElement(By.xpath(properties.getProperty("vnotifyme_video"))).click();
 				Thread.sleep(3000);
 				driver.findElement(By.xpath(properties.getProperty("vpushleads2marketo"))).click();
 				Thread.sleep(5000);
+				driver.findElement(By.xpath(properties.getProperty("marketovideo"))).click();
+				driver.findElement(By.xpath(properties.getProperty("hubspotvideo"))).click();
 				
 				
-				
+				Thread.sleep(3000);
 				
 				
 				
@@ -147,8 +161,10 @@ WebElement eg1 = driver.findElement(By.xpath(properties.getProperty("vpagintionl
 				
 				Thread.sleep(5000);
 				
-				
-				driver.findElement(By.xpath(properties.getProperty("v_search_video"))).sendKeys("10");
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+				js.executeScript("window.scrollTo(document.body.scrollHeight,500)");
+				Thread.sleep(5000);
+				driver.findElement(By.xpath(properties.getProperty("v_search_video"))).sendKeys("po3412CHANDRAYAAN2TEASE");
 				Thread.sleep(3000);
 				driver.findElement(By.xpath(properties.getProperty("v_search_video_click"))).click();
 
@@ -158,12 +174,20 @@ WebElement eg1 = driver.findElement(By.xpath(properties.getProperty("vpagintionl
 				Select vd = new Select(vdropdown);
 				Thread.sleep(5000);
 				vd.selectByValue("1");
-				Thread.sleep(5000);
+				WebDriverWait wait=new WebDriverWait(driver,40);
+
+				WebElement AccountingTextFind = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//td[contains(text(),'Accounting')]")));
+				System.out.println(AccountingTextFind.getAttribute("value"));
 
 				driver.findElement(By.xpath(properties.getProperty("select_video1"))).click();
-				Thread.sleep(15000);
+				WebDriverWait wait4=new WebDriverWait(driver,50);
+
+				WebElement categoryVideosLoading = wait4.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//td[contains(text(),'Accounting')]")));
+				System.out.println(categoryVideosLoading.getAttribute("value"));
+				Thread.sleep(5000);
+				
 				driver.findElement(By.xpath(properties.getProperty("goto_top"))).click();
-				Thread.sleep(15000);
+				Thread.sleep(5000);
 				driver.findElement(By.xpath(properties.getProperty("video_next2"))).click();
 				Thread.sleep(5000);
 
@@ -172,7 +196,7 @@ WebElement eg1 = driver.findElement(By.xpath(properties.getProperty("vpagintionl
 				 * Thread.sleep(5000);
 				 */
 				driver.findElement(By.xpath(properties.getProperty("search_select_partnerlist")))
-						.sendKeys("gayatri test mails");
+						.sendKeys("TGASoftwares");
 				Thread.sleep(5000);
 
 				driver.findElement(By.xpath(properties.getProperty("search_select_partnerlist_click"))).click();
@@ -219,30 +243,28 @@ WebElement eg1 = driver.findElement(By.xpath(properties.getProperty("vpagintionl
 				
 				
 				driver.findElement(By.xpath(properties.getProperty("search_template"))).sendKeys("cobranding");
-				Thread.sleep(5000);
 
 			
 				
 				
-				WebDriverWait waitv7 = new WebDriverWait(driver, 20);
+				WebDriverWait waitv7 = new WebDriverWait(driver, 50);
 				WebElement v7 = waitv7
 						.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(properties.getProperty("search_template_click"))));			//click on search
 				v7.click();
 				
 				
 
-				Thread.sleep(10000);
 				
 				driver.findElement(By.xpath(properties.getProperty("search_template_click_clear"))).click();
 			
 				
-				WebDriverWait waitv9 = new WebDriverWait(driver, 20);
+				WebDriverWait waitv9 = new WebDriverWait(driver, 50);
 				WebElement v9 = waitv9
 						.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(properties.getProperty("search_template_click_clear_search"))));			
 				v9.click();
 				
 
-				WebDriverWait waitv10 = new WebDriverWait(driver, 20);
+				WebDriverWait waitv10 = new WebDriverWait(driver, 50);
 				WebElement v10 = waitv10
 						.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(properties.getProperty("select_template"))));			
 				v10.click();
@@ -251,8 +273,20 @@ WebElement eg1 = driver.findElement(By.xpath(properties.getProperty("vpagintionl
 			
 				driver.findElement(By.xpath(properties.getProperty("email_template_next"))).click();
 				Thread.sleep(5000);
+				driver.findElement(By.xpath(properties.getProperty("video_now"))).click();			//click NOW
+				Thread.sleep(5000);
+				
+				driver.findElement(By.xpath(properties.getProperty("video_launch"))).click();				//click LAUNCH
+				
+				Thread.sleep(7000);
+				
 			}
-
+		  
+			
+			public static String getcurrentcampaignname()
+			{
+				return z;
+			}
 			
 		}
 
