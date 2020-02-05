@@ -121,7 +121,7 @@ public class ManagePageCampaign {
 		driver.findElement(By.xpath(properties.getProperty("page_previewdelete_search"))).sendKeys(Keys.ENTER);//click enter
 		Thread.sleep(3000);
 
-		String s=driver.findElement(By.xpath(properties.getProperty("page_aftersearch_getext"))).getText();//get the text11
+		String s=driver.findElement(By.xpath(properties.getProperty("page_aftersearch_getext"))).getText();//get the text
 		System.out.println(s);
 
 		String Excepted="No Data Found.";
