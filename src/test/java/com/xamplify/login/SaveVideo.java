@@ -11,31 +11,30 @@ public class SaveVideo extends VideoCampaign {
 	@AfterTest
 	public void vsave() throws InterruptedException, SQLException
 	{
-		driver.findElement(By.xpath(properties.getProperty("v_testmail"))).click();
+		driver.findElement(By.xpath(properties.getProperty("v_testmail"))).click();//click on send test mail
 		Thread.sleep(5000);
 		
-		driver.findElement(By.xpath(properties.getProperty("v_mailid"))).sendKeys("gayatrialla11@gmail.com");
-		driver.findElement(By.xpath(properties.getProperty("vsubmit"))).click();
+		driver.findElement(By.xpath(properties.getProperty("v_mailid"))).sendKeys("gayatrialla11@gmail.com");//send data in the test mail field
+		driver.findElement(By.xpath(properties.getProperty("vsubmit"))).click();//click submit
 		Thread.sleep(5000);
-		driver.findElement(By.xpath(properties.getProperty("vok"))).click();
-		Thread.sleep(5000);
-		
-		
-		driver.findElement(By.xpath(properties.getProperty("vsave1"))).click();
-		Thread.sleep(5000);
-		
-		driver.findElement(By.xpath(properties.getProperty("vsave_spamcheck"))).click();
-		Thread.sleep(5000);
-		
-		driver.findElement(By.xpath(properties.getProperty("vsave_insidespamcheck"))).click();
-		Thread.sleep(5000);
-		driver.findElement(By.xpath(properties.getProperty("vsave_inside_refresh"))).click();
-		Thread.sleep(5000);
-		driver.findElement(By.xpath(properties.getProperty("vsave_spam_close"))).click();
+		driver.findElement(By.xpath(properties.getProperty("vok"))).click();//click ok
 		Thread.sleep(5000);
 		
 		
-		driver.findElement(By.xpath(properties.getProperty("vsaved"))).click();
+		driver.findElement(By.xpath(properties.getProperty("vsave1"))).click();//click save
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath(properties.getProperty("vsave_spamcheck"))).click();//click spam check
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath(properties.getProperty("vsave_insidespamcheck"))).click();//click again spam check
+		Thread.sleep(5000);
+		driver.findElement(By.xpath(properties.getProperty("vsave_inside_refresh"))).click();//click refresh 
+		Thread.sleep(5000);
+		driver.findElement(By.xpath(properties.getProperty("vsave_spam_close"))).click();//close spam check
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath(properties.getProperty("vsaved"))).click();//click on save 
 		Thread.sleep(5000);
 	}
 
