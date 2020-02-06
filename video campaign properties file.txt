@@ -10,8 +10,9 @@ openvideocampaign=//h4[contains(text(),'Video')]
 #/html/body/app-root/app-home/div/div/app-select-campaign/div/div[2]/div/div/div[2]/div/div[2]/div/div[2]/a/i
 
 vcampaignName=campaignName
+vcampaign_through=//*[@id=\"campaignDetailsForm\"]/div/div/div/div/div[2]/div/div/div/div[1]/switch/div/div/span[3]
 vwrite_campaign=campaign_emailg99
-through_partner=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/switch[1]/div[1]/div[1]/span[3]
+#through_partner=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/switch[1]/div[1]/div[1]/span[3]
 vsubjectline=//*[@id="subjectLineId"]
 #/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/input[1]
 #//*[@id="subjectLineId"]
@@ -41,9 +42,6 @@ v_search_video_click=//*[@id="home"]/div[1]/div/button[2]/i
 video_category=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/table[1]/thead[1]/tr[1]/th[2]/span[1]/select[1]
 select_video1=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/input[1]
 
-#//*[@id="campaign_video_id_2171"]
-#//*[@id="campaign_video_id_2145"]
-#//*[@id="campaign_video_id_2046"]
 
 goto_top=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/app-scroll-top[1]/img[1]
 
@@ -77,11 +75,7 @@ search_template=//input[@placeholder='Search here']
 search_template_click=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/button[2]/i[1]
 #//div[@class='input-icon right pull-right']//button[@type='submit']
 #//*[contains(@classname,'search-box-item-click email-search')]
-#//*[@id="step-5"]/div/div/div[1]/button[2]/i
-#//*[@id="step-5"]/div/div/div[1]/button[2]/i
-#//*[@id="step-5"]/div/div/div[1]/button[2]
-#//*[@id="step-5"]/div/div/div[1]/button[2]/i
-#//*[@id="step-5"]/div/div/div[1]/button[2]/i
+
 #/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/button[2]/i[1]
 clck_tmplt2=//*[@id="step-5"]/div/div/ul/li[2]
 clck_tmplt3=//*[@id="step-5"]/div/div/ul/li[3]
@@ -92,13 +86,17 @@ search_template_click_clear_search=//*[@id="step-5"]/div/div/div[1]/button
 #//*[@id="step-5"]/div/div/div[1]/button/i
 select_template=//*[@id="user_list_tb_wrapper"]/div/ul[1]/li/div/div[1]/span[2]/a[1]/img
 #//*[@id="user_list_tb_wrapper"]/div/ul[2]/li/div/div[1]/span[2]/a[1]/img
-#//*[@id="user_list_tb_wrapper"]/div/ul[1]/li/div/div[2]
-#//*[@id="user_list_tb_wrapper"]/div/ul[1]/li/div/div[1]/span[1]/label/input
-#//*[@id="user_list_tb_wrapper"]/div/ul[1]/li/div/div[1]/span[1]/label
-#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[2]/li[1]/div[1]/div[1]/span[1]/label[1]
+
+email_template_preview=//div[@id='user_list_tb_wrapper']/div/ul/li/div/div[2]/div/div/span/a/i
+#//div[@id='user_list_tb_wrapper']/div/div/ul/li/div/div[2]/div/div/span/a/i
+#//*[@id="user_list_tb_wrapper"]/div/div/ul/li/div/div[2]/div/div/span/a/i
 
 
 
+
+
+
+email_template_preview_close=//*[@id="show_email_template_preivew"]/div/div/div[1]/button
 email_template_next=//*[@id=\"step6\"]/div
 auto_rspnse_website_vst=//*[@id=\"step-6\"]/form/div[2]/div/div/div[1]/a
 a_r_w_v_sub1=//input[@placeholder='Subject']
@@ -246,3 +244,4 @@ Reason6=//form[@id='form-reply-9']//select[@name='actionId']
 #//input[@placeholder='Subject']
 a_r_e_v_nowlast=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[1]/div[1]/label[1]
 a_r_e_v_nowlast_launch=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[2]/div[1]/button[3]
+
