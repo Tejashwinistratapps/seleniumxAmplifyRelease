@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 public class ManagePageCampaign {
 	WebDriver driver = Instance.getInstance();
-	Properties properties = PropertiesFile.readPropertyFile("rdata.properties");
+	Properties properties = PropertiesFile.readPropertyFile("rdata.properties");//properties file
 
 
 	@Test(priority=411,enabled=true)
@@ -41,7 +41,7 @@ public class ManagePageCampaign {
 		Thread.sleep(3000);
 		driver.findElement(By.xpath(properties.getProperty("page_gearicon"))).click();//gear icon
 		Thread.sleep(3000);
-		driver.findElement(By.linkText("Copy Campaign")).click();//copy camp
+		driver.findElement(By.linkText("Copy Campaign")).click();//copy campaign
 		Thread.sleep(3000);
 		driver.findElement(By.xpath(properties.getProperty("page_cpy_save"))).click();//save
 		Thread.sleep(3000);
@@ -53,7 +53,7 @@ public class ManagePageCampaign {
 		Thread.sleep(3000);
 		driver.findElement(By.xpath(properties.getProperty("page_click_ManageCampaigns_no"))).click();//click on no
 		Thread.sleep(3000);
-		driver.findElement(By.xpath(properties.getProperty("page_gearicon"))).click();//gear icon
+		driver.findElement(By.xpath(properties.getProperty("page_gearicon"))).click();//gear icon//
 		Thread.sleep(3000);
 		driver.findElement(By.linkText("Preview Campaign")).click();//preview
 		Thread.sleep(5000);
@@ -68,7 +68,7 @@ public class ManagePageCampaign {
 		driver.findElement(By.xpath(properties.getProperty("page_gearicon"))).click();//gear icon
 		Thread.sleep(3000);
 
-		driver.findElement(By.linkText("Delete")).click();//delete
+		driver.findElement(By.linkText("Delete")).click();//delete 
 		Thread.sleep(3000);
 
 		driver.findElement(By.xpath(properties.getProperty("page_yes_delete"))).click();//yes
@@ -83,7 +83,8 @@ public class ManagePageCampaign {
 
 		driver.get("https://release.xamplify.io/home/campaigns/manage");
 		Thread.sleep(3000);
-
+		driver.findElement(By.xpath(properties.getProperty("page_tab"))).click();//pagetab
+		Thread.sleep(3000);
 		driver.findElement(By.xpath(properties.getProperty("page_gearicon_third"))).click();//gear icon for third page campaign
 		Thread.sleep(3000);
 		JavascriptExecutor js_down = (JavascriptExecutor) driver;
