@@ -1,0 +1,23 @@
+#LandingPage##########################################################################################################
+
+#Create Page#####
+
+lredirectlink=https://release.xamplify.io/home/dashboard
+ldesignclick=//div/div/ul/li[4]/a/span
+ldesignpage=//div[3]/div/div/div[3]/h5/a/span
+lregular=//li[contains(text(),'Regular')]
+lCobranded=//li[contains(text(),'Co-Branded')]
+lcreateIconclick=//*[@id="max-height"]/div/div/a
+lshowforms=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-add-landing-page[1]/div[1]/div[2]/div[1]/div[1]/div[1]/app-preview-popup[1]/button[1]
+lsortby=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-add-landing-page[1]/div[1]/div[2]/div[1]/div[1]/div[1]/app-preview-popup[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/select[1]
+lsearchfield=//div[@class='page-bar']//input[@id='search-text']
+lsearchclick=//div[@class='page-bar']//button[@class='search-box-item-click']
+lcopylink=//tr[1]//td[2]//input[1]
+lpopupclose=//div[@class='page-bar']//div[@id='forms-list']//button[@class='close-circle']
+liframeswitch=//*[@id=\"bee-plugin-container\"]/iframe
+lsavebutton=//div[@id='root']/div/header/div[2]/button/span
+lpagenamefield=templateNameId
+lpagetype=pageType
+ldiv=/html[1]/body[1]/div[1]/div[2]/div[6]/div[1]/input[1]
+lsave2=//*[@id='save']
+lsuccessclose=//button[@class='close']
