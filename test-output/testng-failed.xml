@@ -1,37 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-<<<<<<< HEAD
-  <test name="Test_UploadVideo(failed)">
-=======
-  <test name="Test_Login(failed)">
->>>>>>> branch 'master' of https://github.com/Tejashwinistratapps/seleniumxAmplifyRelease.git
+  <test name="Test_landingpage(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.xamplify.login.UploadVideo">
-=======
-      <class name="com.xamplify.login.Login">
->>>>>>> branch 'master' of https://github.com/Tejashwinistratapps/seleniumxAmplifyRelease.git
+      <class name="com.xamplify.login.CreatePage">
         <methods>
-<<<<<<< HEAD
-          <include name="uploadvideo"/>
-          <include name="upload2"/>
-          <include name="upload3"/>
-          <include name="upload1"/>
-          <include name="upload4"/>
-=======
-          <include name="login"/>
->>>>>>> branch 'master' of https://github.com/Tejashwinistratapps/seleniumxAmplifyRelease.git
+          <include name="Page_RegularPrivate"/>
+          <include name="Page_RegularPublic"/>
+          <include name="Page_CobrandingPrivate"/>
+          <include name="Page_CobrandingPublic"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.xamplify.login.UploadVideo -->
-=======
-      </class> <!-- com.xamplify.login.Login -->
->>>>>>> branch 'master' of https://github.com/Tejashwinistratapps/seleniumxAmplifyRelease.git
+      </class> <!-- com.xamplify.login.CreatePage -->
     </classes>
-<<<<<<< HEAD
-  </test> <!-- Test_UploadVideo(failed) -->
-=======
-  </test> <!-- Test_Login(failed) -->
->>>>>>> branch 'master' of https://github.com/Tejashwinistratapps/seleniumxAmplifyRelease.git
+  </test> <!-- Test_landingpage(failed) -->
 </suite> <!-- Failed suite [Suite] -->

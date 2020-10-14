@@ -94,7 +94,7 @@ Thread.sleep(5000);
 		Connection connection = DatabaseConnection.getDatabaseConnection();
 		// Statement statement = connection.createStatement();
 		PreparedStatement preparedStatement = connection.prepareStatement(query7);
-		preparedStatement.setObject(1, Status.APPROVE.toString());
+		//preparedStatement.setObject(1, Status.APPROVE.toString());
 		preparedStatement.setString(2, "forever.abjv@gmail.com");
 
 		preparedStatement.executeUpdate();

@@ -51,20 +51,20 @@ import org.slf4j.LoggerFactory;
 public class Xamplifypartners {
 
 	static WebDriver driver = Instance.getInstance();
-	static Properties properties = PropertiesFile.readPropertyFile("C:\\Users\\dtejashwini\\eclipse-workspace\\xamplify-selenium\\datafile.properties");
+	static Properties properties = PropertiesFile.readPropertyFile("rdata.properties");
 	public static Logger logger = LoggerFactory.getLogger(UploadContent.class);
 
-	@SuppressWarnings("deprecation")
+	/*@SuppressWarnings("deprecation")*/
 	public static void main(String[] args) throws InterruptedException, SQLException, IOException {
 
-		/*
-		 * @Test(priority=1) public void launchdriver() throws InterruptedException {
+		
+		 /* @Test(priority=1) public void launchdriver() throws InterruptedException {
 		 * 
 		 * System.setProperty("webdriver.chrome.driver",
 		 * "D:/Selenium/chromedriver2.exe"); Thread.sleep(3000); driver = new
 		 * ChromeDriver(); Thread.sleep(3000); }
-		 */
-		/*
+		 
+		
 		 * @Test(priority=4,enabled=true) public void signin() throws
 		 * InterruptedException {
 		 * 
@@ -84,11 +84,11 @@ public class Xamplifypartners {
 		 * 
 		 * 
 		 * }
-		 */
+		 
 
 		logger.debug("Entering the URL");
 		driver.manage().window().maximize();
-		driver.get("https://release.xamplify.io/");
+		driver.get("https://xamplify.co/");
 		driver.findElement(By.xpath("//a[@class='loginTF']")).click();
 		Thread.sleep(5000);
 		WebElement usernameElement = driver.findElement(By.xpath("//input[@id='username']"));
@@ -103,7 +103,7 @@ public class Xamplifypartners {
 		// driver.findElement(By.id("submitBitton")).click();
 
 		// driver.get("https://xamplify.io/home/dashboard/welcome");
-
+*/
 		Thread.sleep(5000);
 		
 		logger.debug("Starting creating partner using one at time");
@@ -168,7 +168,7 @@ public class Xamplifypartners {
 		actions1.moveToElement(partners1).build().perform();
 		Thread.sleep(2000);
 		System.out.println("cfcpartners");
-		driver.get("https://release.xamplify.io/home/partners/add");
+		driver.get("https://xamplify.co/home/partners/add");
 		logger.debug("Starting creating partner using copy from clipboard - comma separated");
 
 		driver.findElement(By.id("copyFromClipBoard")).click();// click copy from clipboard
@@ -241,7 +241,7 @@ public class Xamplifypartners {
 			actions11.moveToElement(partners11).build().perform();
 			Thread.sleep(2000);
 			System.out.println("cfcpartners");
-			driver.get("https://release.xamplify.io/home/partners/add");
+			driver.get("https://xamplify.co/home/partners/add");
 			logger.debug("Starting creating partner using copy from clipboard - Tab separated");
 
 

@@ -11,18 +11,13 @@
       <class name="com.xamplify.login.Login"/>
     </classes>    
    </test> 
-   <test name="Test_UploadVideo">
-    <classes>
-      <class name="com.xamplify.login.UploadVideo"/>
-    </classes>    
-   </test> 
    
-   <!-- <test name="Test_Login">
+ <!--   <test name="Test_partners">
     <classes>
-      <class name="com.xamplify.login.Login"/>
+      <class name="com.xamplify.login.Xamplifypartners"/>
     </classes>    
-   </test> 
-  
+   </test>  -->
+ 
    <test name="Test_Emailcampaign">
     <classes>
       <class name="com.xamplify.login.Emailcampaign"/>
@@ -34,9 +29,5 @@
       <class name="com.xamplify.login.ManageTemplates"/>
     </classes>    
    </test>  -->
-  
-  
-  
-  
- 
-</suite> <!-- Suite -->
+    
+</suite> 

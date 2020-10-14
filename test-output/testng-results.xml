@@ -1,125 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="4" failed="0" total="6" passed="2">
-=======
 <testng-results skipped="0" failed="0" total="2" passed="2">
->>>>>>> branch 'master' of https://github.com/Tejashwinistratapps/seleniumxAmplifyRelease.git
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Suite" duration-ms="63599" started-at="2019-06-06T09:42:40Z" finished-at="2019-06-06T09:43:43Z">
-=======
-  <suite name="Suite" duration-ms="34654" started-at="2019-06-06T10:00:50Z" finished-at="2019-06-06T10:01:25Z">
->>>>>>> branch 'master' of https://github.com/Tejashwinistratapps/seleniumxAmplifyRelease.git
+  <suite name="Suite" duration-ms="35325" started-at="2020-07-29T12:04:58Z" finished-at="2020-07-29T12:05:34Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Test_Login" duration-ms="28506" started-at="2019-06-06T09:42:40Z" finished-at="2019-06-06T09:43:08Z">
-=======
-    <test name="Test_Login" duration-ms="34654" started-at="2019-06-06T10:00:50Z" finished-at="2019-06-06T10:01:25Z">
->>>>>>> branch 'master' of https://github.com/Tejashwinistratapps/seleniumxAmplifyRelease.git
+    <test name="Test_Login" duration-ms="35262" started-at="2020-07-29T12:04:58Z" finished-at="2020-07-29T12:05:33Z">
       <class name="com.xamplify.login.Login">
-<<<<<<< HEAD
-        <test-method status="PASS" signature="start()[pri:0, instance:com.xamplify.login.Login@1ed4ae0f]" name="start" duration-ms="13027" started-at="2019-06-06T15:12:40Z" finished-at="2019-06-06T15:12:53Z">
-=======
-        <test-method status="PASS" signature="start()[pri:0, instance:com.xamplify.login.Login@1ed4ae0f]" name="start" duration-ms="14047" started-at="2019-06-06T15:30:50Z" finished-at="2019-06-06T15:31:04Z">
->>>>>>> branch 'master' of https://github.com/Tejashwinistratapps/seleniumxAmplifyRelease.git
+        <test-method status="PASS" signature="start()[pri:0, instance:com.xamplify.login.Login@6e6f2380]" name="start" duration-ms="14735" started-at="2020-07-29T17:34:58Z" finished-at="2020-07-29T17:35:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="login()[pri:0, instance:com.xamplify.login.Login@1ed4ae0f]" name="login" duration-ms="15436" started-at="2019-06-06T15:12:53Z" finished-at="2019-06-06T15:13:08Z">
-=======
-        <test-method status="PASS" signature="login()[pri:0, instance:com.xamplify.login.Login@1ed4ae0f]" name="login" duration-ms="20591" started-at="2019-06-06T15:31:04Z" finished-at="2019-06-06T15:31:25Z">
->>>>>>> branch 'master' of https://github.com/Tejashwinistratapps/seleniumxAmplifyRelease.git
+        <test-method status="PASS" signature="login()[pri:0, instance:com.xamplify.login.Login@6e6f2380]" name="login" duration-ms="20496" started-at="2020-07-29T17:35:13Z" finished-at="2020-07-29T17:35:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
       </class> <!-- com.xamplify.login.Login -->
     </test> <!-- Test_Login -->
-<<<<<<< HEAD
-    <test name="Test_UploadVideo" duration-ms="35055" started-at="2019-06-06T09:43:08Z" finished-at="2019-06-06T09:43:43Z">
-      <class name="com.xamplify.login.UploadVideo">
-        <test-method status="FAIL" signature="uploadvideo()[pri:0, instance:com.xamplify.login.UploadVideo@53045c6c]" name="uploadvideo" is-config="true" duration-ms="0" started-at="2019-06-06T15:13:08Z" finished-at="2019-06-06T15:13:08Z">
-          <exception class="java.io.IOException">
-            <message>
-              <![CDATA[Cannot run program "D:\Selenium\Files\Upload": CreateProcess error=2, The system cannot find the file specified]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.IOException: Cannot run program "D:\Selenium\Files\Upload": CreateProcess error=2, The system cannot find the file specified
-	at java.lang.ProcessBuilder.start(Unknown Source)
-	at java.lang.Runtime.exec(Unknown Source)
-	at java.lang.Runtime.exec(Unknown Source)
-	at java.lang.Runtime.exec(Unknown Source)
-	at com.xamplify.login.UploadVideo.uploadvideo(UploadVideo.java:55)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
-	at java.lang.ProcessImpl.create(Native Method)
-	at java.lang.ProcessImpl.<init>(Unknown Source)
-	at java.lang.ProcessImpl.start(Unknown Source)
-	... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.IOException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadvideo -->
-        <test-method status="SKIP" signature="upload1()[pri:0, instance:com.xamplify.login.UploadVideo@53045c6c]" name="upload1" duration-ms="33" started-at="2019-06-06T15:13:43Z" finished-at="2019-06-06T15:13:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- upload1 -->
-        <test-method status="SKIP" signature="uploadvideo()[pri:0, instance:com.xamplify.login.UploadVideo@53045c6c]" name="uploadvideo" is-config="true" duration-ms="0" started-at="2019-06-06T15:13:43Z" finished-at="2019-06-06T15:13:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadvideo -->
-        <test-method status="SKIP" signature="upload2()[pri:0, instance:com.xamplify.login.UploadVideo@53045c6c]" name="upload2" duration-ms="2" started-at="2019-06-06T15:13:43Z" finished-at="2019-06-06T15:13:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- upload2 -->
-        <test-method status="SKIP" signature="upload3()[pri:0, instance:com.xamplify.login.UploadVideo@53045c6c]" name="upload3" duration-ms="2" started-at="2019-06-06T15:13:43Z" finished-at="2019-06-06T15:13:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- upload3 -->
-        <test-method status="SKIP" signature="uploadvideo()[pri:0, instance:com.xamplify.login.UploadVideo@53045c6c]" name="uploadvideo" is-config="true" duration-ms="0" started-at="2019-06-06T15:13:43Z" finished-at="2019-06-06T15:13:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadvideo -->
-        <test-method status="SKIP" signature="uploadvideo()[pri:0, instance:com.xamplify.login.UploadVideo@53045c6c]" name="uploadvideo" is-config="true" duration-ms="0" started-at="2019-06-06T15:13:43Z" finished-at="2019-06-06T15:13:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadvideo -->
-        <test-method status="SKIP" signature="upload4()[pri:0, instance:com.xamplify.login.UploadVideo@53045c6c]" name="upload4" duration-ms="6" started-at="2019-06-06T15:13:43Z" finished-at="2019-06-06T15:13:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- upload4 -->
-      </class> <!-- com.xamplify.login.UploadVideo -->
-    </test> <!-- Test_UploadVideo -->
-=======
->>>>>>> branch 'master' of https://github.com/Tejashwinistratapps/seleniumxAmplifyRelease.git
+    <test name="Test_partners" duration-ms="1" started-at="2020-07-29T12:05:34Z" finished-at="2020-07-29T12:05:34Z">
+    </test> <!-- Test_partners -->
   </suite> <!-- Suite -->
 </testng-results>

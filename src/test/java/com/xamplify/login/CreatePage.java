@@ -269,6 +269,7 @@ public class CreatePage {
 	    
 			JavascriptExecutor js11= (JavascriptExecutor) driver;
 			js11.executeScript("arguments[0].click();", element); 
+			Thread.sleep(3000);
 			driver.findElement(By.xpath(properties.getProperty("lsave2"))).click(); // clicks on the save button. 
 			Thread.sleep(4000);
 			driver.findElement(By.xpath(properties.getProperty("lsuccessclose"))).click();
