@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Test_landingpage(failed)">
+    <classes>
+      <class name="com.xamplify.login.CreatePage">
+        <methods>
+          <include name="Page_RegularPrivate"/>
+          <include name="Page_RegularPublic"/>
+          <include name="Page_CobrandingPrivate"/>
+          <include name="Page_CobrandingPublic"/>
+        </methods>
+      </class> <!-- com.xamplify.login.CreatePage -->
+    </classes>
+  </test> <!-- Test_landingpage(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,247 @@
+#vcampaign######################################################################################################################################
+
+
+campaign_hover_v =//span[@class='title'] [contains(text(),'Campaign')]
+
+vcreatecampaign=//span[ contains(@class,'title')] [contains(text(),'Create Campaign')]
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/app-leftsidebar[1]/div[1]/div[1]/ul[1]/li[5]/ul[1]/li[1]/a[1]/span[1]
+
+openvideocampaign=//h4[contains(text(),'Video')]
+#/html/body/app-root/app-home/div/div/app-select-campaign/div/div[2]/div/div/div[2]/div/div[2]/div/div[2]/a/i
+
+vcampaignName=campaignName
+vcampaign_through=//*[@id=\"campaignDetailsForm\"]/div/div/div/div/div[2]/div/div/div/div[1]/switch/div/div/span[3]
+vwrite_campaign=campaign_emailg99
+#through_partner=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/switch[1]/div[1]/div[1]/span[3]
+vsubjectline=//*[@id="subjectLineId"]
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/input[1]
+#//*[@id="subjectLineId"]
+vpreheader=preHeader
+vnotifyme_email=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]/div[1]/switch[1]/div[1]/div[1]/span[3]
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/div[1]/switch[1]/div[1]/div[1]/span[3]
+vnotifyme_link=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[9]/div[1]/div[1]/div[2]/div[1]/switch[1]/div[1]/div[1]
+vnotifyme_video=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[9]/div[1]/div[1]/div[3]/div[1]/switch[1]/div[1]/div[1]
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[2]/div[1]/switch[1]/div[1]/div[1]/span[3]
+marketovideo=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[10]/div[2]/div[1]/div[1]/div[1]/div[1]/label[1]/span[1]
+hubspotvideo=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[10]/div[2]/div[1]/div[2]/div[1]/div[1]/label[1]/span[1]
+vcampaign_next_button1=//*[@id="campaign-detail-next-button"]
+#//button[@id='campaign-detail-next-button']
+
+vpagintionlist=//*[@id="videos_table_new_wrapper"]/div/app-pagination/ul
+
+v_pagenation_nxt=//*[@id="videos_table_new_wrapper"]/div/app-pagination/ul/li[6]/a/span/span
+#//*[@id="videos_table_new_wrapper"]/div/app-pagination/ul/li[8]/a
+
+vpushleads2marketo=//*[@id=\"falseAction\"]/div/div/span[3]
+
+v_search_video=//*[@id="home"]/div[1]/div/input
+v_search_video_click=//*[@id="home"]/div[1]/div/button[2]/i
+
+
+
+video_category=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/table[1]/thead[1]/tr[1]/th[2]/span[1]/select[1]
+select_video1=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/input[1]
+
+
+goto_top=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/app-scroll-top[1]/img[1]
+
+video_next2=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]
+#vd_nxt=//button[@title='Please Select Video']
+search_select_partnerlist=//*[@id=\"user_list_tb_wrapper\"]/div[2]/div/div/input
+search_select_partnerlist_click=//div[@class='input-icon right']//i[@class='fa fa-search']
+#//button[@title='gayatri test mails']
+#//*[@id="user_list_tb_wrapper"]/div[2]/div/div/button[2]/i
+select_partner_preview=//i[@class='fa fa-eye']
+#//*[@id="campaignContactListTable_2986"]/td[4]/a/i
+
+close_partner_preview=//*[@id="usersModal"]/div/div/div[1]/button
+#//*[@id="usersModal"]/div/div/div[1]/button
+#//*[@id="usersModal"]/div/div/div[1]/button/i
+#//*[@id="usersModal"]/div/div/div[3]/button
+slct_prtnr_prvw_pgntn=//*[@id="usersModal"]/div/div/div[3]/app-pagination/ul/li[13]/a/span/i
+#//*[@id="usersModal"]/div/div/div[3]/app-pagination/ul/li[12]/a/span/i
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[3]/app-pagination[1]/ul[1]/li[8]/a[1]/span[1]/i[1]
+select_partnerlist=//div[@id='step-4']//tbody//td[1]
+
+#//*[@id="2986"]
+select_next3=//*[@id=\"step-4\"]/div/div/button[2]
+
+search_template=//input[@placeholder='Search here']
+#//input[@placeholder='Search for a template']
+#//*[@id="step-5"]/div/div/div[1]/input
+#//li[@class='list__item list__item--selected']//div[@class='clearfix']
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/input[1]
+
+search_template_click=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/button[2]/i[1]
+#//div[@class='input-icon right pull-right']//button[@type='submit']
+#//*[contains(@classname,'search-box-item-click email-search')]
+
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/button[2]/i[1]
+clck_tmplt2=//*[@id="step-5"]/div/div/ul/li[2]
+clck_tmplt3=//*[@id="step-5"]/div/div/ul/li[3]
+clck_tmplt4=//*[@id="step-5"]/div/div/ul/li[4]
+search_template_click_clear=//*[@id="step-5"]/div/div/div[1]/button[1]
+search_template_click_clear_search=//*[@id="step-5"]/div/div/div[1]/button
+#//*[@id="step-5"]/div/div/div[1]/button[2]/i
+#//*[@id="step-5"]/div/div/div[1]/button/i
+select_template=//*[@id="user_list_tb_wrapper"]/div/ul[1]/li/div/div[1]/span[2]/a[1]/img
+#//*[@id="user_list_tb_wrapper"]/div/ul[2]/li/div/div[1]/span[2]/a[1]/img
+
+email_template_preview=//div[@id='user_list_tb_wrapper']/div/ul/li/div/div[2]/div/div/span/a/i
+#//div[@id='user_list_tb_wrapper']/div/div/ul/li/div/div[2]/div/div/span/a/i
+#//*[@id="user_list_tb_wrapper"]/div/div/ul/li/div/div[2]/div/div/span/a/i
+
+
+
+
+
+
+email_template_preview_close=//*[@id="show_email_template_preivew"]/div/div/div[1]/button
+email_template_next=//*[@id=\"step6\"]/div
+auto_rspnse_website_vst=//*[@id=\"step-6\"]/form/div[2]/div/div/div[1]/a
+a_r_w_v_sub1=//input[@placeholder='Subject']
+video_now=//*[@id=\"step-6\"]/form/div[3]/div/div[1]/div[1]/label[1]
+video_launch=//button[contains(text(),'Launch')]
+a_r_w_v_now=//*[@id=\"step-6\"]/form/div[3]/div/div[1]/div[1]/label[1]
+a_r_w_v_now_launch=//button[contains(text(),'Launch')]
+auto_rspnse_website_vst2=//*[@id=\"step-6\"]/form/div[2]/div/div/div[1]/a
+whn_to_snd_eml_drpdwn=//form[@id='form-click-2']//select[@id='url-schedule-type']
+#//*[@id=\"url-schedule-type\"]
+
+#form-control pointer ng-pristine ng-valid ng-touched
+#//*[@id="url-schedule-type"]
+a_r_w_v_sub2=//form[@id='form-click-2']//input[@placeholder='Subject']
+#//input[@placeholder='Subject']
+a_r_w_v_now1=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[1]/div[1]/label[1]/input[1]
+a_r_w_v_testmail=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[2]/div[1]/button[2]
+enter_testmailid=//button[contains(text(),'Send Test Email')]
+#/html[1]/body[1]/div[1]/div[2]/input[1]
+
+
+v_testmail=//button[contains(text(),'Send Test Email')]
+v_mailid=//input[@class='swal2-input']
+vsubmit=//button[@class='swal2-confirm styled']
+vok=//button[@class='swal2-confirm styled']
+
+
+
+testmailid_submit=//button[@class='swal2-confirm styled']
+#/html[1]/body[1]/div[1]/div[2]/button[1]
+test_mailid_s_ok=/html[1]/body[1]/div[1]/div[2]/button[1]
+a_r_w_v_launch=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[2]/div[1]/button[3]
+#//*[@id=\"step-6\"]/form/div[3]/div/div[2]/div/button[3]
+
+
+
+vschdule_date_hour=//input[@class='numInput flatpickr-hour']
+vschdule_date_min=//input[@class='numInput flatpickr-minute']
+
+auto_rspnse_website_vst3=//*[@id=\"step-6\"]/form/div[2]/div/div/div[1]/a
+whn_to_snd_eml_drpdwn2=//form[@id='form-click-3']//*[@id=\"url-schedule-type\"]
+a_r_w_v_sub3=//form[@id='form-click-3']//input[@placeholder='Subject']
+v_schedule_click=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[1]/div[1]/label[2]/input[1]
+a_r_w_v_schdul=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[1]/div[1]/label[2]/input[1]
+a_r_w_v_date=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[1]/div[2]/div[1]/input[1]
+
+v_schdule_date=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[1]/div[2]/div[1]/input[1]
+a_r_w_v_nxtdate=/html/body/div[2]/div[1]/span[2]/svg
+#/html/body/div[3]/div[1]/span[2]/svg
+
+slct_a_r_w_v_date=//span[@class='flatpickr-day today']
+v_schdule_selectdate=//span[@class='flatpickr-day today']
+#/html/body/div[4]/div[2]/div/div[2]/div/span[33]
+#/html/body/div[2]/div[2]/div/div[2]/div/span[32]
+#//*[@id=\"step-6\"]/form/div[3]/div/div[1]/div[2]/div[1]/input
+#slct_dte27=/html/body/div[2]/div[2]/div/div[2]/div/span[32]
+a_r_w_v_country_drpdwn=//*[@id="countryName"]
+v_schedule_cntrydrpdwn=//*[@id="countryName"]
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[1]/div[2]/div[2]/select[1]
+a_r_w_v_scheduled=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[2]/div[1]/button[3]
+
+v_schedule=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[2]/div[1]/button[3]
+
+auto_rspnse_email_vst=//*[@id=\"step-6\"]/form/div[2]/div/div/div[2]/a
+
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[2]/div[1]/div[1]/div[2]/a[1]/i[1]
+
+#//*[@id="step-6"]/form/div[2]/div/div/div[2]/a
+
+#//*[@id="step-6"]/form/div[2]/div/div/div[2]/a/i
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[2]/div[1]/div[1]/div[2]/a[1]/i[1]
+Reason=//form[@id='form-reply-4']//select[@name='actionId']
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[2]/div[1]/div[1]/div[3]/fieldset[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/select[1]
+a_r_e_v_sub1=//form[@id='form-reply-4']//input[@placeholder='Subject']
+#//input[@placeholder='Subject']
+a_r_e_v_now1=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[1]/div[1]/label[3]/input[1]
+a_r_e_v_now_launch=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[2]/div[1]/button[3]
+auto_rspnse_email_vst2=//*[@id="step-6"]/form/div[2]/div/div/div[2]/a
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[2]/div[1]/div[1]/div[2]/a[1]/i[1]
+#//*[@id="step-6"]/form/div[2]/div/div/div[2]/a
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[2]/div[1]/div[1]/div[2]/a[1]/i[1]
+Reason2=//form[@id='form-reply-5']//select[@name='actionId']
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[2]/div[1]/div[1]/div[3]/fieldset[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/select[1]
+a_r_e_v_sub2=//form[@id='form-reply-5']//input[@placeholder='Subject']
+#//input[@placeholder='Subject']
+a_r_e_v_schdul=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[1]/div[1]/label[2]
+a_r_e_v_schdul_date=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[1]/div[2]/div[1]/input[1]
+a_r_e_v_schdul_date_clck=/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/span[27]
+#/html/body/div[3]/div[2]/div/div[2]/div/span[27]
+a_r_e_v_slct_cntry=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[1]/div[2]/div[2]/select[1]
+a_r_e_v_slct_cntry_drpdwn=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[1]/div[2]/div[2]/select[1]
+a_r_e_v_slct_timezone=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[1]/div[2]/div[3]/select[1]
+a_r_e_v_schduled=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[2]/div[1]/button[3]
+auto_rspnse_email_vst3=//*[@id="step-6"]/form/div[2]/div/div/div[2]/a
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[2]/div[1]/div[1]/div[2]/a[1]/i[1]
+
+#//*[@id="step-6"]/form/div[2]/div/div/div[2]/a
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[2]/div[1]/div[1]/div[2]/a[1]/i[1]
+Reason3=//form[@id='form-reply-6']//select[@name='actionId']
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[2]/div[1]/div[1]/div[3]/fieldset[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/select[1]
+a_r_e_v_sub3=//form[@id='form-reply-6']//input[@placeholder='Subject']
+#//input[@placeholder='Subject']
+#a_r_e_v_save
+vsave1=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[1]/div[1]/label[3]
+
+
+
+
+vsave_spamcheck=//button[contains(text(),'Spam check')]
+vsave_insidespamcheck=//*[@class='btn btn-primary pull-right mb10']
+vsave_inside_refresh=//*[@class=\"btn btn-success btn-xs\"]
+vsave_spam_close=//div[@class='modal-dialog modal-lg modal-template']//button[@class='close-circle']
+
+
+
+
+#a_r_e_v_saved
+vsaved=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[2]/div[1]/button[3]
+auto_rspnse_email_vst4=//*[@id="step-6"]/form/div[2]/div/div/div[2]/a
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[2]/div[1]/div[1]/div[2]/a[1]/i[1]
+
+#//*[@id="step-6"]/form/div[2]/div/div/div[2]/a
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[2]/div[1]/div[1]/div[2]/a[1]/i[1]
+Reason4=//form[@id='form-reply-7']//select[@name='actionId']
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[2]/div[1]/div[1]/div[3]/fieldset[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/select[1]
+a_r_e_v_sub4=//form[@id='form-reply-7']//input[@placeholder='Subject']
+#//input[@placeholder='Subject']
+a_r_e_v_save1=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[1]/div[1]/label[3]/input[1]
+a_r_e_v_saved1=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[2]/div[1]/button[3]
+auto_rspnse_email_vst5=//*[@id="step-6"]/form/div[2]/div/div/div[2]/a
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[2]/div[1]/div[1]/div[2]/a[1]/i[1]
+
+#//*[@id="step-6"]/form/div[2]/div/div/div[2]/a
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[2]/div[1]/div[1]/div[2]/a[1]/i[1]
+Reason5=//form[@id='form-reply-8']//select[@name='actionId']
+#/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[2]/div[1]/div[1]/div[3]/fieldset[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/select[1]
+a_r_e_v_sub5=//form[@id='form-reply-8']//input[@placeholder='Subject']
+
+auto_rspnse_email_vst6=//*[@id="step-6"]/form/div[2]/div/div/div[2]/a
+a_r_e_v_sub6=//form[@id='form-reply-9']//input[@placeholder='Subject']
+#//form[@id='form-reply-10']//input[@placeholder='Subject']
+#//form[@id='form-reply-9']//input[@placeholder='Subject']
+Reason6=//form[@id='form-reply-9']//select[@name='actionId']
+
+#//input[@placeholder='Subject']
+a_r_e_v_nowlast=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[1]/div[1]/label[1]
+a_r_e_v_nowlast_launch=/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-create-campaign[1]/div[1]/div[1]/div[2]/div[1]/div[6]/form[1]/div[3]/div[1]/div[2]/div[1]/button[3]
+
