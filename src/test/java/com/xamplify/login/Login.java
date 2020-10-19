@@ -27,10 +27,11 @@ public class Login {
 
 		
 		Thread.sleep(5000);
-		/*driver.findElement(By.id(prop.getProperty("email"))).sendKeys(prop.getProperty("user.name"));
+		driver.findElement(By.id(prop.getProperty("email"))).sendKeys(prop.getProperty("user.name"));
 		driver.findElement(By.id(prop.getProperty("password"))).sendKeys(prop.getProperty("user.password"));
-		driver.findElement(By.id(prop.getProperty("signin"))).click();*/
+		driver.findElement(By.id(prop.getProperty("signin"))).click();
 		Thread.sleep(15000);
+		Thread.sleep(1000);
 		
 	}
 			
