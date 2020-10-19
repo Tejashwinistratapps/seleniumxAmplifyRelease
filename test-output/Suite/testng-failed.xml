@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <test name="Test_landingpage(failed)">
+  <test name="Test_VideoCampaign(failed)">
     <classes>
-      <class name="com.xamplify.login.CreatePage">
+      <class name="com.xamplify.login.VideoCampaign">
         <methods>
-          <include name="Page_RegularPrivate"/>
-          <include name="Page_RegularPublic"/>
-          <include name="Page_CobrandingPrivate"/>
-          <include name="Page_CobrandingPublic"/>
+          <include name="vdecampaign"/>
         </methods>
-      </class> <!-- com.xamplify.login.CreatePage -->
+      </class> <!-- com.xamplify.login.VideoCampaign -->
     </classes>
-  </test> <!-- Test_landingpage(failed) -->
+  </test> <!-- Test_VideoCampaign(failed) -->
 </suite> <!-- Failed suite [Suite] -->
